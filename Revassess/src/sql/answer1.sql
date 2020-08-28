@@ -1,3 +1,2 @@
-SELECT * from APP_USER
-	LEFT JOIN USER_ROLE ON APP_USER.role_id=USER_ROLE.role_id
-	WHERE USER_ROLE.name='BASIC_USER';
+SELECT * FROM app_user a, user_role ur  
+WHERE a.role_id = ur.role_id AND ur.role_id =3;

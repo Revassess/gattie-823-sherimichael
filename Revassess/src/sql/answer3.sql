@@ -1,4 +1,4 @@
-SELECT * From APP_USER AS a
-	OUTER JOIN STUDY_SET AS b
-	ON a.user_id = b.owner_id
-	WHERE a.user_id = 5;
+SELECT * FROM app_user a
+	JOIN study_set s 
+	ON a.user_id = s.owner_id 
+	WHERE user_id = 5;
