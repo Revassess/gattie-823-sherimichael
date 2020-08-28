@@ -18,7 +18,7 @@ public class ConnectionUtil {
 	private static ConnectionUtil cu;
 	
 	// add your jdbc url
-	public static final String URL = "jdbc:postgresql://javafs200803.cicoda1qunaq.us-east-2.rds.amazonaws.com:5432/tier3";;
+	public static final String URL = "jdbc:postgresql://javafs200803.cicoda1qunaq.us-east-2.rds.amazonaws.com:5432/database-1";;
 	// add your jdbc username
 	public static final String USERNAME = "postgres";
 	// add your jdbc password
@@ -36,11 +36,11 @@ public class ConnectionUtil {
 			e.printStackTrace();
 		}
 		
-		String endpoint = "jdbc:postgresql://javafs200803.cicoda1qunaq.us-east-2.rds.amazonaws.com:5432/tier3";
+		String url = "jdbc:postgresql://javafs200803.cicoda1qunaq.us-east-2.rds.amazonaws.com:5432/database-1";
 		String username = "postgres";
 		String password = "comAW416"; 
 		
-		return DriverManager.getConnection(endpoint, username, password);
+		return DriverManager.getConnection(url, username, password);
 	}
 
 
