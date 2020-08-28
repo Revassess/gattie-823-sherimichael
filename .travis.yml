@@ -1,9 +1,1 @@
-language: java
-jdk: openjdk8
-git:
-    depth: false
-script: ./build.sh
-notifications:
-    email:
-    #enter your email address below
-        - example@example.com
+language: javajdk: openjdk8git:    depth: falsescript: ./build.shnotifications:    email:    #enter your email address below        - sherimichael@gmail.com
